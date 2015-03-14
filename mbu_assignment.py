@@ -30,12 +30,22 @@ def main():
     print "The name of the script is " + str(sys.argv[0])+"."
     #Remember to convert numbers into strings before printing them.
     print "You have entered " + str(len(sys.argv[1:])) + " arguments."
-    print "They are: " 
+    print "They are: "
+    
 
     #This is for loop. We take each element from sys.argv and print it to the consile.
     for i in sys.argv[1:]:
+        
+        
+        r= int(i) % 2
+        if r== 1:
+            print "Odd"
+        else:
+            print "Even"
+        
         print str(i)
         print "\n"
+    
 
 if __name__ == '__main__':
     main()
